@@ -39,11 +39,7 @@
                         </div>
                         <!-- /.card-body -->
                         <div class="card-footer">
-                            “The world remains constant over the centuries. But human life is like the dew at dawn or a bubble rising through water. Transitory.”
-                            <br>
-                            “Dunia tetap konstan selama berabad-abad. Tapi kehidupan manusia seperti embun saat fajar atau gelembung yang naik melalui air. Untuk Sementara.”
-                            <br>
-                            <em>— Raiden Shogun</em>
+                            Footer
                         </div>
                         <!-- /.card-footer-->
                     </div>

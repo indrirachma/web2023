@@ -1,6 +1,6 @@
-@include('admin.partials.header')
-@include('admin.partials.sidebar')
+@extends('admin.template.master')
 
+@section('content')
 <div class="container-fluid px-4">
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -40,6 +40,7 @@
                 </div>
                 <div class="card-body">
                     <h1 class="my-4">Daftar Pasien</h1>
+                    <a href="{{ route('pasiens.create') }}" class="btn btn-primary">Tambah Pasien</a>
                     <table class="table table-bordered">
                         <thead>
                             <tr>
@@ -51,20 +52,27 @@
                                 <th>Gender</th>
                                 <th>Email</th>
                                 <th>Alamat</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($pasien as $pasien)
-                                <tr>
-                                    <td>{{ $pasien->id }}</td>
-                                    <td>{{ $pasien->kode }}</td>
-                                    <td>{{ $pasien->nama }}</td>
-                                    <td>{{ $pasien->tmp_lahir }}</td>
-                                    <td>{{ $pasien->tgl_lahir }}</td>
-                                    <td>{{ $pasien->gender }}</td>
-                                    <td>{{ $pasien->email }}</td>
-                                    <td>{{ $pasien->alamat }}</td>
-                                </tr>
+                            <tr>
+                                <td>{{ $pasien->id }}</td>
+                                <td>{{ $pasien->kode }}</td>
+                                <td>{{ $pasien->nama }}</td>
+                                <td>{{ $pasien->tmp_lahir }}</td>
+                                <td>{{ $pasien->tgl_lahir }}</td>
+                                <td>{{ $pasien->gender }}</td>
+                                <td>{{ $pasien->email }}</td>
+                                <td>{{ $pasien->alamat }}</td>
+                                <td>
+                                    <a href="{{ route('pasiens.show', $pasien->id) }}" class="btn btn-info btn-sm">Read</a>
+                                    <a class="btn btn-info btn-sm">Read</a>
+                                    <a class="btn btn-warning btn-sm">Edit</a>
+                                    <a class="btn btn-danger btn-sm">Delete</a>
+                                </td>
+                            </tr>
                             @endforeach
                         </tbody>
                     </table>
@@ -83,4 +91,4 @@
     <!-- /.content-wrapper -->
 </div>
 
-@include('admin.partials.footer')
+@endsection

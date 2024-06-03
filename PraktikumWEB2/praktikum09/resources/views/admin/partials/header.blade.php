@@ -7,7 +7,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="dasboard.php" class="nav-link bg-dark rounded">Home</a>
+                    <a href="pages" class="nav-link bg-dark rounded">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="pasien" class="nav-link">Pasien</a>
