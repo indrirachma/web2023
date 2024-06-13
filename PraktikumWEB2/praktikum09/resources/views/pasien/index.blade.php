@@ -68,7 +68,6 @@
                                 <td>{{ $pasien->alamat }}</td>
                                 <td>
                                     <a href="{{ route('pasiens.show', $pasien->id) }}" class="btn btn-info btn-sm">Read</a>
-                                    <a class="btn btn-info btn-sm">Read</a>
                                     <a class="btn btn-warning btn-sm">Edit</a>
                                     <a class="btn btn-danger btn-sm">Delete</a>
                                 </td>
